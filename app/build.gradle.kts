@@ -12,8 +12,8 @@ android {
         applicationId = "com.kavach.app"
         minSdk = 23            // Android 6.0 — purane se naye sab phones 📱
         targetSdk = 34         // Android 14 rules handle
-        versionCode = 55
-        versionName = "5.3.0"
+        versionCode = 57
+        versionName = "5.5.0"
 
         // 📡 Bootstrap config — gradle.properties se EK BAAR, har APK mein embed
         buildConfigField("String", "KAVACH_MAIN_BOT_TOKEN",
