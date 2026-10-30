@@ -1,0 +1,49 @@
+╔══════════════════════════════════════════════════════════╗
+║  🏁 KAVACH v5.5.0 — **FINAL** (chief ke 5 orders pack)      ║
+║  code 57 • APK 6,360,616 B • release 428953410            ║
+║  src-zip md5: 927e34158e54c4b3067504ca9e1819b9            ║
+║  menu: 17 cats / 254 acts / 0 orphans (audit ✅)          ║
+║  GH push ×9 (200/201) • QR asset up • TG receipts ↓       ║
+╚══════════════════════════════════════════════════════════╝
+
+CHIEF KE 5 ORDERS — sab theek ✅ (ye FINAL build hai; PAT revoke pe bhi
+device pe sab kuchh LOCAL/self-sufficient chalta rahega 🛡)
+
+1) 🔄 UPDATE-SYSTEM achhe se (poora pipeline, scratch-se-grade):
+   /update → latest-release check → APK download → 🔏 SACCHAI-gate
+   (package-name ✔ versionCode bada ✔ SIGNATURE same ✔ — fake APK kabhi nahi)
+   → installer kholo → 👻 GHOST-TAP retry-chains se "Install" → "DONE" khud dabaata
+   (8×1.5s + 6×1.2s retry, OEM dheele-window proof) → process replace →
+   Watchdog rebirth → "✅ UPDATE COMPLETE vX" msg. 120s auto-disarm + timeout-report.
+   Unknown-sources window aaye toh switch bhi ghost dabata (best-effort ✔).
+   👁 ghost OFF ho → ek-tap fallback + clear-msg. Setup-cat row 14 = UPDATE button.
+2) 🏷 BOT-NAME brand-pretty: Realme/iQOO/Vivo/Samsung/Xiaomi/POCO/OPPO …
+   (model-id RMX… naam se HATA — description me poora model-detail rehta hai)
+   boot pe auto-sync hoga (naye naam ka DP/desc bhi — hash badla hai isliye). 
+3) 👻 NOTIFICATION pahle-wala design FINAL: ghost default-OFF migrate ho gaya
+   (v5.2.0 first-run injection v5.5.0 me saaf) — "manual-hide pe bhi chale" rule:
+   • 1-baar missing → repost; dobara hide 15min me → 6h auto-RESPECT window
+     (chupchaap kaam chalta; keep-alive zinda), 6h baad ek polite repost
+   • channel BLOCKED pakda → doosri lane se repost (lane-flip) — auto-heal 🔧
+   • /ghostnotif on se ultra-ghost mode kabhi bhi waapas (chief-ke haath choice)
+4) 🩹 PHOTO-FAIL FIX: Telegram caption 1024-char cross ho → pura PHOTO hi
+   chhoo jaata tha (silent fail) — wahi chor pakda: ab caption safe-cap.
+   Screenshot-lane pehle se diagnostics ke saath (lastWhyFull) hai.
+5) 🫀 v5.3.0 LONG-LIFE GUARDIAN poora andar: SAFE-MODE loop-guard,
+   LifeLine murder-detect (CRASH vs OEM-MURDER?), /life /crashes,
+   heartbeat-death gap log, LIFE-ALERT (1 msg/din max, silence-rule ✔)
+
+FILES (9): NotifGhost, KavachStyle, TelegramApi, UpdateGod (NEW),
+KavachEyeService, KavachService, DeviceMenu, CommandRouter, build.gradle.kts
+(version 57/5.5.0). Menu +1 row (kupd → /update) — 254 acts.
+
+TEST (chief morning):
+  □ /update → "pehle se latest v5.5.0" aana
+  □ notif hide karo → kaam chalta rahe (/life se uptime/batt check)
+  □ bot-naam ab brand-wala? (e.g., "Realme")
+  □ /photo /screenshot do — photo aana
+  □ Setup row 13/14 → LIFE-TRACK / UPDATE
+  □ regression: /menu /survive /iglog /wapeeps
+
+GH PAT: (masked — session-memory ✔)  • PENDING.md repo me bhi hai
+Love-you too boss 😊 — FINAL build, long-life ka boot lag gayi 🇮🇳
