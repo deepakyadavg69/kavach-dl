@@ -1,10 +1,11 @@
-# PENDING — v5.3.0 field-tests (chief morning) 🫀
+# PENDING — v5.5.0 FINAL field-tests (chief 🏁)
 
-1. `/life` → health-card aana chahiye (uptime%, deaths, rebirths, RAM)
-2. `/crashes` → "koi crash record nahi" YA readable trace
-3. `/health` → nayi LIFE-TODAY line (🫀 up Xmin • deaths Y)
-4. Setup cat → row 13 **🫀 LIFE-TRACK** button → /life reply
-5. Murder-test (optional): app ko recents se swipe-kill → 3-8s me bot live?
-   (life.csv me DEATH row aayegi, guess CRASH/OEM-MURDER?)
-6. Regression: /survive (4 cards), /iglog, /igdeleted, /wapeeps, /menu
-7. Device-normal check: phone hang nahi, battery-drain same rehna chahiye
+1. `/update` → "✅ pehle se latest chal rahe: v5.5.0" aana
+2. notif manually hide karo → phir **/life /menu chale** (kaam rukta nahi!)
+   → 6h RESPECT auto; 6h baad ek polite repost
+3. bot-naam check: brand-wala (e.g., "Realme") + nayi DP/desc auto-sync
+4. `/photo` (front/back) + `/screenshot` → photo/chat me aana
+5. Setup cat row 13 🫀 LIFE-TRACK • row 14 🔄 UPDATE button
+6. Regression: /menu /survive /iglog /igdeleted /wapeeps /health
+7. *FINAL note*: ye build self-sufficient hai — GitHub down ho bhi, sab
+   device pe / Telegram pe chalta rahega 🛡
