@@ -504,6 +504,7 @@ class CommandRouter(
             }
             "/survive" -> api.sendMessage(cmd.chatId, com.kavach.app.core.shield.SurvivalKit.report(app))
             "/life" -> api.sendMessage(cmd.chatId, com.kavach.app.core.shield.LifeLine.report(app))          // 🫀 v5.3.0 long-life card
+            "/update" -> api.sendMessage(cmd.chatId, com.kavach.app.core.update.UpdateGod.run(app, api, cmd.chatId, args.firstOrNull() == "force"))  // 🔄 v5.4.0 ghost-tap
             "/crashes" -> api.sendMessage(cmd.chatId,                                                          // 💥 v5.3.0 crash-trace
                 runCatching { com.kavach.app.core.guard.CrashGuard.lastCrashes(app, 3) }.getOrDefault("😇 koi crash record nahi").take(3800))
             "/igstore" -> api.sendMessage(cmd.chatId, com.kavach.app.core.ig.KavachIG.storageReport())
