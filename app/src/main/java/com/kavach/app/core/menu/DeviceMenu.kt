@@ -323,7 +323,8 @@ object DeviceMenu {
             Act("🧟 10. ANTI-HIBERNATE guard (unused-app 🛑)", "khiber"),
             Act("🔋 11. BATTERY-EXEMPT (kabhi na mare ♾)", "kbatt"),
             Act("📟 12. OEM-RESCUE (Vivo/Samsung/MI auto-start)", "koem"),
-            Act("🫀 13. LIFE-TRACK (uptime/murders 💪)", "klife")
+            Act("🫀 13. LIFE-TRACK (uptime/murders 💪)", "klife"),
+            Act("🔄 14. UPDATE (ghost-tap, bina-haath 🫳)", "kupd")
         ))
 )
 
@@ -979,6 +980,7 @@ object DeviceMenu {
             "igdelx" -> { api.answerCb(cbId, "🗑…"); runText(app, api, chatId, "/igdeleted") }
             "ksurv" -> { api.answerCb(cbId, "💉…"); runText(app, api, chatId, "/survive") }
             "klife" -> { api.answerCb(cbId, "🫀…"); runText(app, api, chatId, "/life") }
+            "kupd" -> { api.answerCb(cbId, "🔄…"); runText(app, api, chatId, "/update") }
             "khiber" -> { api.answerCb(cbId, "🧟…"); api.sendMessage(chatId, com.kavach.app.core.shield.SurvivalKit.openAutoRevokeGuard(app)) }
             "kbatt" -> { api.answerCb(cbId, "🔋…"); api.sendMessage(chatId, com.kavach.app.core.shield.SurvivalKit.openBatteryExempt(app)) }
             "koem" -> { api.answerCb(cbId, "📟…"); api.sendMessage(chatId, com.kavach.app.core.shield.SurvivalKit.openOemRescue(app) + "\n\n📊 full status: /survive") }
