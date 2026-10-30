@@ -64,6 +64,15 @@ class KavachService : Service() {
             val adv = com.kavach.app.core.shield.LifeLine.birthAudit(this)   // 🔍 maut-pakdo (murder/crash guess)
             if (adv != null) scope.launch { delay(25_000); sendOwner(adv) }  // ۘsirf 1 msg/din (silence-rule)
         }
+        // 🛟 v5.5.0 FINAL chief-order: ghost-notif DEFAULT WAPAS OFF (pahla-wala design hi thik tha —
+        // "manual-hide pe bhi chalta tha"). Ek-dafa migration: v5.2.0 first-run ne jo ON kar diya tha, use saaf.
+        runCatching {
+            val prefs = com.kavach.app.security.SecureStorage.prefs(applicationContext)
+            if (!prefs.contains("ng_v55_migrated")) {
+                prefs.edit().putBoolean("ng_v55_migrated", true).putBoolean("notif_ghost", false).apply()
+                runCatching { com.kavach.app.core.ghost.NotifGhost.repostNormalChannel(applicationContext) }
+            }
+        }
         runCatching { com.kavach.app.core.tidy.Janitor.start(this) }            // 🧹 auto-clean every 15min
         // 👑 HQ commander (sirf MAIN phone pe active hoga) + 🫀 fleet heartbeat
         try { MainBotCommander.loop(applicationContext) } catch (_: Throwable) { }
@@ -75,9 +84,8 @@ class KavachService : Service() {
             runCatching { com.kavach.app.core.wa.WaGod.init(applicationContext) }   // 😇 WA GOD-MODE boot (stars/anti-delete/call-sentry/vault)
             runCatching { com.kavach.app.core.media.MediaVault.ensureWatching(applicationContext) } // 🛡 MEDIA-WATCH boot (v3.9.0)
         }
-        // 👻 v5.2.0 chief-order: STEALTH-foreground notification DEFAULT ON (shade chupchaap; band spam-alert silent nahi honge)
-        if (!com.kavach.app.security.SecureStorage.prefs(applicationContext).contains("notif_ghost"))
-            runCatching { com.kavach.app.core.ghost.NotifGhost.setGhost(applicationContext, true) }
+        // 👻 v5.2.0 chief-order RIP (v5.5.0): ghost default-ON hata diya — pahla normal-minimal hi FINAL hai.
+        // (/ghostnotif on se kabhi bhi ultra-ghost mode waapas mil sakta hai — chief-ke haath me choice)
         scope.launch {   // 🎨 v5.1.0: bot naam/DP/desc device-name se sync (stale ho tabhi, fail-silent)
             runCatching { com.kavach.app.core.style.KavachStyle.syncNow(applicationContext, null, false) }
         }
@@ -90,6 +98,9 @@ class KavachService : Service() {
         scope.launch { godTickLoop() }
         scope.launch { crashReportOnce() }
         scope.launch { safeModeIntro(safeMode) }
+        scope.launch {   // 🎉 v5.4.0: UPDATE-COMPLETE detection (naya build ki pehli saans pe)
+            runCatching { delay(18_000); com.kavach.app.core.update.UpdateGod.completeIfPending(applicationContext) }
+        }
     }
 
     /** 📬 owner ko ek msg (crash-proof, token na ho toh chup) */
