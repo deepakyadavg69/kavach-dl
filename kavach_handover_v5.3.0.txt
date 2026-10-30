@@ -1,0 +1,56 @@
+╔══════════════════════════════════════════════════════╗
+║  🛡 KAVACH v5.3.0 — "LONG-LIFE GUARDIAN" 🫀           ║
+║  code 55 • APK 6,351,122 B • release 428694582        ║
+║  src-zip md5: 6d9236b9be9ec8ba2dacb24f7b56f3d7        ║
+║  menu: 17 cats / 253 acts / 0 orphans (audit ✅)      ║
+║  GH push ×7 (201) • QR asset up                       ║
+╚══════════════════════════════════════════════════════╝
+
+CHIEF KE TEEN KASMEIN — sab implement ✅
+1) CRASH KABHI NAHI → agar aaye bhi toh:
+   • crash.log + kstore/logs/crash.csv receipt ✍️
+   • 2s me auto-restart (AlarmManager) — silent, koi popup NAHI
+   • chief ko Telegram beacon (max 3s, thread+line+build)
+   • ANR-watch: main-thread 12s+ atke → silent-restart
+2) DEVICE MAARE TOH BACHE:
+   • 🌀 SAFE-MODE: 10min me 3+ crash → heavy engines aaram
+     (motion/WA/IG/media/OTP/dreams aaram; bot+watchdog+alerts LIVE)
+     30min clean-uptime → apne-aap full-power + "✅" msg
+   • 🫀 LifeLine: har 10-min beat (0 extra wakeup!), birth-audit pe
+     MURDER-PAKDO: gap>12min → CRASH vs OEM-MURDER? guess → life.csv
+   • ⚠ LIFE-ALERT: din me 3+ deaths → SIRF 1 msg/din → /survive
+     ke 3 cards (BATTERY-EXEMPT + ANTI-HIBERNATE + OEM-RESCUE) ON karne bolta
+3) DEVICE NORMAL CHALE:
+   • 0 naye wakeups (sab purane 10-min/60s ticks pe piggyback)
+   • /life me RAM read-out = proof (~MB) • file-caps pre-existing (200KB/350KB rotate)
+
+NAYE COMMANDS:
+  /life     → 🫀 full health-card (uptime%, deaths, crashes, ANR,
+              safe-mode, rebirths, RAM, last events)
+  /crashes  → 💥 last-3 crash-trace readable
+  /health   → 🏥 ab +1 LIFE-TODAY line
+  Setup cat row 13 → 🫀 LIFE-TRACK button (klife)
+
+FILES CHANGED (7):
+  core/guard/CrashGuard.kt   — v3.7.0→v5.3.0 rewrite (loop-guard,
+     safeTick, stampBoot, counts, life.csv + crash.csv, safe-line beacon)
+  core/shield/LifeLine.kt    — NEW (beat/birthAudit/section/report)
+  core/service/KavachService.kt — safeMode gate onCreate+godTick+
+     heartbeat, stampBoot, birthAdvisory, safeModeIntro, sendOwner(suspend)
+  core/commands/CommandRouter.kt — +/life +/crashes
+  core/finals/KavachFinals.kt — health() me LifeLine.section
+  core/menu/DeviceMenu.kt    — Setup-cat row 13 klife + handler
+  app/build.gradle.kts       — 55 / 5.3.0
+
+BUILD-NOTE: gradle daemon OOM 1 baar → seedha retry me pass
+(sandbox RAM 2GB; Xmx 1400m + SerialGC + workers=1 — ye rekha mat paar karo)
+
+FIELD-TEST (subah):
+  □ /life kholo — card aaya? uptime/min gin raha?
+  □ /crashes — khaali/normal text (crash kiya ho toh trace)
+  □ /health me LIFE-TODAY line dikhi?
+  □ Setup cat row 13 → 🫀 LIFE-TRACK chala?
+  □ (regression) /survive, /iglog, /igdeleted, /wapeeps chalu?
+
+GH PAT: (masked — session-memory me hai ✔)
+TG receipts: mids niche message me — APK + QR + checklist
